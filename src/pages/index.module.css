@@ -1,0 +1,61 @@
+/* 整頁海洋背景的容器：canvas 以 absolute 鋪滿，內容用 z-index 浮在上面 */
+.oceanPage {
+  position: relative;
+  overflow: hidden;
+}
+
+/* 控制在約 4 成視窗高，讓下方三張卡片不需捲動就看得到 */
+.heroBanner {
+  position: relative;
+  z-index: 1;
+  min-height: 42vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 2.5rem 0;
+}
+
+.heroContent {
+  position: relative;
+}
+
+.heroTitle {
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  text-shadow: 0 2px 18px rgba(0, 20, 40, 0.7);
+}
+
+.heroSubtitle {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.35rem;
+  margin-bottom: 2.2rem;
+  text-shadow: 0 1px 10px rgba(0, 20, 40, 0.8);
+}
+
+.mainContent {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 3rem;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 3rem 1.5rem;
+  }
+
+  .heroTitle {
+    font-size: 2.4rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1.05rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
